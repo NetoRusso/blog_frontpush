@@ -24,6 +24,7 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 8px 24px;
 }
 
 .border {
@@ -38,13 +39,14 @@ a {
     margin-left: 24px;
 
     .nav-link {
-      // border: 1px solid pink;
       display: inline-block;
       padding: 8px;
       transition: all .5s ease;
 
       &:hover {
-        opacity: .7;
+        opacity: .9;
+        color: $blue-light;
+        scale: .98;
       }
     }
   }
@@ -58,4 +60,15 @@ a {
   border-radius: 4px;
   color: $white-light;
   padding: 8px;
+}
+
+.img-profile {
+  width: 56px;
+  height: 56px;
+  background-color: $gray-2;
+  border-radius: 50%;
+}
+
+.container-posts {
+  display: flex;
 }
