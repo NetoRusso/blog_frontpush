@@ -670,4 +670,61 @@ body {
   height: auto;
   min-height: 100vh;
   background-color: #050607;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #EDEFF0;
+  font-family: "poppins", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+.menu li {
+  margin-left: 24px;
+}
+.menu li .nav-link {
+  display: inline-block;
+  padding: 8px;
+  transition: all 0.5s ease;
+}
+.menu li .nav-link:hover {
+  opacity: 0.7;
+}
+
+.input-search {
+  min-width: 300px;
+  height: 32px;
+  background-color: #15171A;
+  border: 0;
+  border-radius: 4px;
+  color: #FAFCFC;
+  padding: 8px;
 }/*# sourceMappingURL=style.css.map */
