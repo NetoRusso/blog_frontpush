@@ -1,10 +1,14 @@
+import Article from "./components/Article";
+import Header from "./components/Header";
 
 
 function App() {
+
   return (
-    <div className="App">
-      <h1>Bora Codar</h1>
-    </div>
+    <>
+      <Header />
+      <Article />
+    </>
   );
 }
 
