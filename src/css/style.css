@@ -662,7 +662,7 @@ html {
   min-width: 320px;
   height: auto;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -741,4 +741,78 @@ a {
 
 .container-posts {
   display: flex;
+}
+
+.carrinho-box {
+  width: 70%;
+  max-width: 1200px;
+  min-width: 600px;
+  margin: 32px auto 16px auto;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.carrinho-box h3 {
+  order: 2;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 50%;
+  background-color: green;
+  padding: 8px 20px;
+  color: #FAFCFC;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  order: 1;
+}
+
+.remove-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 50%;
+  background-color: red;
+  padding: 8px 20px;
+  color: #FAFCFC;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  order: 3;
+}
+.remove-button:disabled {
+  background-color: #6D6E70;
+  cursor: not-allowed;
+}
+.remove-button:disabled:hover {
+  opacity: 1;
+  scale: 1;
+}
+
+.add-button:hover, .remove-button:hover {
+  opacity: 0.8;
+  scale: 0.9;
+  transition: all 300ms ease;
+}
+
+button {
+  padding: 8px;
+  border: 0;
+  background-color: #F5F7F7;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+  scale: 0.9;
+  transition: all 300ms ease;
 }/*# sourceMappingURL=style.css.map */

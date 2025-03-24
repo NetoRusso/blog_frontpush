@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "category": "Tecnologia",
       "title": "O guia definitivo sobre o blog",
       "resume": "Lorem ipsum",
@@ -10,7 +10,7 @@
       "date": "March 2, 2025"
     },
     {
-      "id": 2,
+      "id": "2",
       "category": "Fotografia",
       "title": "Quais as melhores câmeras em 2021?",
       "resume": "Lorem ipsum",
@@ -19,7 +19,7 @@
       "date": "March 4, 2025"
     },
     {
-      "id": 4,
+      "id": "4",
       "category": "Cinema",
       "title": "Os 10 filmes com maior bilheteria.",
       "resume": "Lorem ipsum",
@@ -29,4 +29,3 @@
     }
   ]
 }
-

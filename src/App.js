@@ -1,5 +1,6 @@
-import Article from "./components/Article";
+// import Carrinho from "./components/Carrinho";
 import Header from "./components/Header";
+import Main from "./pages/Main";
 
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
   return (
     <>
       <Header />
-      <Article />
+      {/* <Article /> */}
+      {/* <Carrinho /> */}
+      <Main />
     </>
   );
 }

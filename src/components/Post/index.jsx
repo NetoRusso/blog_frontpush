@@ -1,7 +1,7 @@
 
 const Post = (props) => {
   return (
-    <div className="post mx-2">
+    <div key={props.id} className="post mx-2">
       <div className="img-post"></div>
       <h5>{props.subtitle}</h5>
       <h3>{props.title}</h3>
@@ -9,8 +9,8 @@ const Post = (props) => {
       <div className="flex pt-2">
         <div className="img-profile "></div>
         <div className="description-profile ml-2">
-          <h6 className="color-blue">Fulano de tal</h6>
-          <p>Mac, 23, 2025 - 8 min read</p>
+          <h6 className="color-blue">{props.author}</h6>
+          <p>{props.date}</p>
         </div>
       </div>
     </div>
