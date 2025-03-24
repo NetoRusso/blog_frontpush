@@ -5,40 +5,34 @@ import { useState, useEffect } from "react";
 const Main = () => {
 
   const [data, setData] = useState([]);
-
-
-  const handleAxios = async () => {
-    try {
-      const response = await api.get("/posts");
+  
+  useEffect(() => { 
+    api.get("/posts")
+    .then((response) => {
       setData(response.data);
+    })
+  }, []);
 
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => { }, [data]);
 
   return (
     <>
       <section className="container">
-        <h2>Main.jsx</h2>
-        <button onClick={handleAxios} >Fazer Requisição</button>
+        <h2 className="mt-3">Artigos</h2>
+
         <div className="mt-5 container-posts">
           {
             data.map((post, index) => {
               return (
-                <>
+                <div key={index}>
                   <Post
-                    key={index}
                     subtitle={post.category}
                     title={post.title}
                     date={post.date}
                     author={post.author}
                     >
-                    {post.description}
+                    {post.resume}
                   </Post>
-                </>
+                </div>
               )
             })
           }
