@@ -1,6 +1,5 @@
-// import Carrinho from "./components/Carrinho";
 import Header from "./components/Header";
-import Main from "./pages/Main";
+import Rotas from "./routes";
 
 
 function App() {
@@ -8,9 +7,8 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Article /> */}
+      <Rotas />
       {/* <Carrinho /> */}
-      <Main />
     </>
   );
 }
