@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Rotas from "./routes";
 
 
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Rotas />
       {/* <Carrinho /> */}
     </>

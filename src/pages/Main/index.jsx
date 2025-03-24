@@ -17,8 +17,8 @@ const Main = () => {
   return (
     <>
       <section className="container">
-        <h2 className="mt-3">Artigos</h2>
 
+        <h2 className="mt-3">Artigos</h2>
         <div className="mt-5 container-posts">
           {
             data.map((post, index) => {
@@ -37,6 +37,7 @@ const Main = () => {
             })
           }
         </div>
+
       </section>
     </>
   )
